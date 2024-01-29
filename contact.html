@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/index_style.css">
+
+        
+    </head>
+    <body class="bg-black" >
+        <div class="loading justify-content-center align-items-center">
+            <span class="loader "></span>
+        </div>
+
+          <!-- -------------- Nav Bar Section ------------------------- -->
+
+       <header>
+        <div class="sideBar d-flex  bg-black">
+
+            <div class="navSideBar text-white ps-4 py-5 d-flex flex-column justify-content-between  bg-black">
+    
+                <ul class="list-unstyled topBar ">
+                    <li class="wow bounceInUp " data-wow-duration="1s" data-wow-delay="1.4s"><a href="search.html">Search</a></li>
+                    <li class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="1.6s"><a href="catogry.html">Categories</a></li>
+                    <li class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s"><a href="area.html">Area</a></li>
+                    <li class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="2.6s"><a href="ingrdiant.html">Ingredients</a></li>
+                    <li class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="2.8s"><a href="contact.html">Contact Us</a></li>
+    
+                </ul>
+                <div class="footer">
+                    <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe fs-5 "></i>
+                <p class="w-75">Copyright Â© 2024 All Rights
+                    Reserved.</p>
+                </div>
+                
+                 
+    
+    
+    
+            </div>
+            
+           <div class="d-flex position-fixed ">
+    
+            <ul class="menuBar list-unstyled d-flex flex-column justify-content-between py-5 bg-white ">
+    
+                <li><img src="images/logo.png" alt="logo" width="60px" ></li>
+                <li class="m-c"><i class="fa-solid fa-bars  menu fs-3 ps-3"></i></li>
+                <li class="d-flex flex-column gap-2 ps-3">
+                    <i class="fa-solid fa-globe fs-5 main-color"></i>
+                    <i class="fa-solid fa-share-nodes fs-5"></i>
+    
+                </li>
+            </ul>
+           </div>
+    
+           </div>
+       </header>
+       <!-- ---------------------------------------------------------- -->
+
+      <!-- >>>>>>>>>>>>>>>>>>> Contact Section <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+      <div class="container">
+
+        <div class="row  g-4 " id="rowData"><div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+
+<div class="container w-75 text-center">
+
+    <h1> Food Care </h1>
+    <h4>Welcome Our Us !</h4>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+
+            <input id="nameInput"  onkeyup="inputNameValidation()" type="text" class="form-control" placeholder="Enter Your Name">
+            <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Special characters and numbers not allowed
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <input id="emailInput" onkeyup="inputEmailValidation()" type="email" class="form-control emailInput " placeholder="Enter Your Email">
+
+            <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Email not valid *exemple@yyy.zzz
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input id="phoneInput" onkeyup="inputPhoneValidation()" type="text" class="form-control " placeholder="Enter Your Phone">
+            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid Phone Number
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input id="ageInput" onkeyup="inputsAgeValidation()" type="number" class="form-control " placeholder="Enter Your Age">
+            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid age
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input id="passwordInput" onkeyup="inputsPassValidation()" type="password" class="form-control " placeholder="Enter Your Password">
+            <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid password *Minimum eight characters, at least one letter and one number:*
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input id="rePasswordInput" onkeyup="inputsRePassValidation()" type="password" class="form-control " placeholder="Repassword">
+            <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid repassword 
+            </div>
+        </div>
+    </div>
+   <div class="bttn" id="bttn"> <button id="submitBtn" disabled class="btn btn-outline-danger px-3 mt-3">Submit</button></div>
+</div>
+</div> </div>
+    </div>
+      
+    
+      
+      
+
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        
+
+         <script src="js/mine.js"></script>
+    </body>
+</html>

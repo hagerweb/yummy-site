@@ -1,0 +1,163 @@
+body,html{
+    transition: 1s all !important;
+    overflow: hidden;
+}
+
+.sideBar ul , .navSideBar{
+    height: 100vh;
+    
+    
+}
+.main-color{
+    color: rgb(198, 27, 61) !important;
+}
+img{
+    margin-left: 1px !important;
+}
+.topBar {
+line-height:40px;
+}
+
+.sideBar{
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+.menuBar{
+    position: absolute;
+    left: 250px;
+    
+}
+.navSideBar{
+  position: fixed;
+  left: 0px;
+ 
+
+}
+.image-item{
+  
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+img{
+    position: relative;
+}
+.overlay{
+    transition: 0.5s all;
+    background-color:rgba(225,225,255,0.8);
+    
+    position: absolute;
+    top: 400;
+    bottom:0;
+    left: 0;
+    right: 0;
+  
+    
+   
+    
+}
+a{
+    text-decoration: none;
+    color: white !important;
+}
+.image-item:hover .overlay{
+    top: 0;
+
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(204, 202, 202) !important;
+}
+.ingrad-item p{
+    max-width: 300px;
+    max-height: 100px;
+    margin: auto;
+}
+h1{
+    font-family: cursive !important;
+    text-align: center;
+    font-size: 50px;
+    color: crimson;
+    
+}
+h4{
+    font-size: 18px;
+    font-family: cursive !important;
+    text-align: center;
+    color: crimson;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    font-style: italic;
+}
+.btn-outline-danger:hover{
+    background-color:  crimson !important;
+    color: white !important;
+
+
+}
+.loading{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999999999999999;
+    background-color: black;
+    display: flex;
+    
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent rgb(220, 20, 60) rgb(201, 19, 55);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
